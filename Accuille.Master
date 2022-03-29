@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Accuille.master.cs" Inherits="chi_EFM.Accuille" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1214px;
+            height: 730px;
+        }
+        .auto-style2 {
+            width: 228px;
+            height: 730px;
+        }
+        .auto-style3 {
+            height: 113px;
+        }
+    </style>
+</head>
+<body style="height: 1132px">
+    <form id="form1" runat="server">
+    <table>
+        <tr>
+            <td colspan="2" class="auto-style3" style="font-style: normal; font-weight: bolder; font-size: x-large; font-family: 'Bahnschrift Light Condensed'; font-variant: normal; color: #000000; background-color: #00FF00">
+
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2" style="background-color: #FF9999">
+
+                <asp:Menu ID="Menu1" runat="server">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Ajouter reclamation.aspx" Text="Reclamation" Value="Reclamation"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/consultation.aspx" Text="Consultaion" Value="Consultaion"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/login.aspx" Text="Deconnecte" Value="Deconnecte"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+
+            </td>
+            <td class="auto-style1">
+                
+                     <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                    </div>
+                
+            </td>
+           
+        </tr>
+
+
+
+
+    </table>
+
+</form>
+    
+</body>
+</html>
